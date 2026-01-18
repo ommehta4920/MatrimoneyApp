@@ -53,3 +53,7 @@ git add README.md
 git commit -m "Add project README"
 git push
 
+## APK Download
+You can download the latest APK from the GitHub Releases section:
+
+➡️ Releases → Matrimony App v1.0
