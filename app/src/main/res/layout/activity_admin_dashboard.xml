@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/romance_light_pink"
+    android:padding="0dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvAdminTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard - User Approval"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="14dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:background="@color/romance_red"
+        android:elevation="4dp"/>
+
+    <!-- Content container with padding -->
+    <LinearLayout
+        android:id="@+id/adminContentContainer"
+        android:layout_below="@id/tvAdminTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ListView
+            android:id="@+id/lvUsers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="12dp"
+            android:paddingBottom="22dp"/>
+
+        <Button
+            android:id="@+id/btnAdminLogout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Logout"
+            android:backgroundTint="@color/romance_red"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</RelativeLayout>

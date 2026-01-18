@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/romance_light_pink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="Profile Setup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="14dp"
+            android:gravity="center"
+            android:background="@color/romance_red"
+            android:elevation="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+                <EditText
+                    android:id="@+id/etHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Height (cm)"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/romance_dark_red"/>
+
+                <EditText
+                    android:id="@+id/etWeight"
+                    android:hint="Weight (kg)"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/romance_dark_red"
+                    android:layout_marginTop="12dp"/>
+
+                <EditText
+                    android:id="@+id/etReligion"
+                    android:hint="Religion"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/romance_dark_red"
+                    android:inputType="text"
+                    android:layout_marginTop="12dp"/>
+
+                <EditText
+                    android:id="@+id/etCaste"
+                    android:hint="Caste"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/romance_dark_red"
+                    android:inputType="text"
+                    android:layout_marginTop="12dp"/>
+
+                <EditText
+                    android:id="@+id/etLocation"
+                    android:hint="Location"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/romance_dark_red"
+                    android:inputType="text"
+                    android:layout_marginTop="12dp"/>
+
+                <EditText
+                    android:id="@+id/etEducation"
+                    android:hint="Education"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/romance_dark_red"
+                    android:inputType="text"
+                    android:layout_marginTop="12dp"/>
+
+                <EditText
+                    android:id="@+id/etOccupation"
+                    android:hint="Occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/romance_dark_red"
+                    android:inputType="text"
+                    android:layout_marginTop="12dp"/>
+
+                <EditText
+                    android:id="@+id/etBio"
+                    android:hint="Bio"
+                    android:inputType="textMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="12dp"
+                    android:textColor="@color/romance_dark_red"
+                    android:gravity="top"
+                    android:layout_marginTop="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnSaveProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save Profile"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/romance_red"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

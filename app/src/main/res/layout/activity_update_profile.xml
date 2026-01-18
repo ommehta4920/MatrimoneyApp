@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/romance_light_pink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title bar -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="Update Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="14dp"
+            android:gravity="center"
+            android:background="@color/romance_red"
+            android:elevation="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:gravity="center_horizontal">
+
+            <!-- Profile Picture -->
+            <ImageView
+                android:id="@+id/imgProfilePic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/img"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/profile_img_corner"
+                android:clipToOutline="true" />
+
+            <Button
+                android:id="@+id/btnChangePic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Picture"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/romance_red" />
+
+            <!-- Username -->
+            <EditText
+                android:id="@+id/etUsername"
+                android:hint="Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/etPhone"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Height -->
+            <EditText
+                android:id="@+id/etHeight"
+                android:hint="Height (cm)"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Weight -->
+            <EditText
+                android:id="@+id/etWeight"
+                android:hint="Weight (kg)"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Religion -->
+            <EditText
+                android:id="@+id/etReligion"
+                android:hint="Religion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Caste -->
+            <EditText
+                android:id="@+id/etCaste"
+                android:hint="Caste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Location -->
+            <EditText
+                android:id="@+id/etLocation"
+                android:hint="Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Education -->
+            <EditText
+                android:id="@+id/etEducation"
+                android:hint="Education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Occupation -->
+            <EditText
+                android:id="@+id/etOccupation"
+                android:hint="Occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Bio -->
+            <EditText
+                android:id="@+id/etBio"
+                android:hint="Bio"
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:gravity="top"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/romance_red"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

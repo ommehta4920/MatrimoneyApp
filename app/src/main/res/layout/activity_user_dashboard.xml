@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome, User!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="14dp"
+            android:gravity="center"
+            android:background="@color/romance_red"
+            android:elevation="4dp"
+            android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Grid of Square Cards -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <!-- My Profile -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardProfile"
+                style="@style/DashboardSquareCard"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_person"
+                        android:layout_marginBottom="8dp"
+                        app:tint="@color/romance_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Profile"
+                        android:textSize="16sp"
+                        android:textColor="@color/romance_red"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Set Profile -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSetProfile"
+                style="@style/DashboardSquareCard"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_edit"
+                        android:layout_marginBottom="8dp"
+                        app:tint="@color/romance_red" />
+
+                    <TextView
+                        android:id="@+id/tvProfileDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Profile"
+                        android:textSize="16sp"
+                        android:textColor="@color/romance_red"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Preferences -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardPreferences"
+                style="@style/DashboardSquareCard"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_settings"
+                        app:tint="@color/romance_red"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Preferences"
+                        android:textSize="16sp"
+                        android:textColor="@color/romance_red"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Search Matches -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSearch"
+                style="@style/DashboardSquareCard"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_search"
+                        app:tint="@color/romance_red"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search Matches"
+                        android:textSize="16sp"
+                        android:textColor="@color/romance_red"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- My Matches -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMatches"
+                style="@style/DashboardSquareCard"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_favorite"
+                        app:tint="@color/romance_red"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Matches"
+                        android:textSize="16sp"
+                        android:textColor="@color/romance_red"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Requests -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardRequests"
+                style="@style/DashboardSquareCard"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_request"
+                        app:tint="@color/romance_red"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Requests"
+                        android:textSize="16sp"
+                        android:textColor="@color/romance_red"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Messages -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMessages"
+                style="@style/DashboardSquareCard"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_message"
+                        app:tint="@color/romance_red"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Messages"
+                        android:textSize="16sp"
+                        android:textColor="@color/romance_red"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Logout (Red Block) -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLogout"
+                style="@style/DashboardSquareCard"
+                app:cardBackgroundColor="@color/romance_red">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_logout"
+                        app:tint="@color/white"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

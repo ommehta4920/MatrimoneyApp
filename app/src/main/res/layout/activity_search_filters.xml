@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/romance_light_pink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvSearchfilters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Profiles"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="14dp"
+            android:gravity="center"
+            android:background="@color/romance_red"
+            android:elevation="4dp" />
+
+        <!-- Content Wrapper with padding -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Min Age -->
+            <EditText
+                android:id="@+id/etMinAge"
+                android:hint="Min Age"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red" />
+
+            <!-- Max Age -->
+            <EditText
+                android:id="@+id/etMaxAge"
+                android:hint="Max Age"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp" />
+
+            <!-- Min Height -->
+            <EditText
+                android:id="@+id/etMinHeight"
+                android:hint="Min Height (cm)"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp" />
+
+            <!-- Max Height -->
+            <EditText
+                android:id="@+id/etMaxHeight"
+                android:hint="Max Height (cm)"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp" />
+
+            <!-- Religion -->
+            <EditText
+                android:id="@+id/etReligion"
+                android:hint="Religion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp" />
+
+            <!-- Caste -->
+            <EditText
+                android:id="@+id/etCaste"
+                android:hint="Caste"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@color/romance_dark_red"
+                android:layout_marginTop="12dp" />
+
+            <!-- Gender Spinner -->
+            <Spinner
+                android:id="@+id/spGender"
+                android:spinnerMode="dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/gender_array"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+
+            <!-- Search Button -->
+            <Button
+                android:id="@+id/btnSearch"
+                android:text="Search"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/romance_red"
+                android:textSize="18sp"
+                android:layout_marginTop="24dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/romance_light_pink"
+    android:padding="24dp">
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:paddingBottom="16dp"
+                android:id="@+id/tvLoginTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back"
+                android:textColor="@color/romance_dark_red"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:hint="Email / Phone"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tvLoginTitle"
+                android:layout_marginTop="30dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:textColor="@color/romance_dark_red"
+                android:textSize="16sp"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/etUsername"
+                android:layout_marginTop="20dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:textColor="@color/romance_dark_red"
+                android:textSize="16sp"
+                android:drawableLeft="@android:drawable/ic_lock_lock"
+                android:drawablePadding="10dp"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:text="Login"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@id/etPassword"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:backgroundTint="@color/romance_red"
+                android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Register"
+        android:textColor="@color/romance_dark_red"
+        android:textSize="16sp"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</RelativeLayout>
